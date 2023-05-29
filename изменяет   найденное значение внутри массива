@@ -1,0 +1,18 @@
+const array = [1, 2, 3, 4, 5];
+const searchValue = parseInt(prompt("Введите значение для поиска:"));
+const newValue = parseInt(prompt("Введите новое значение:"));
+
+let found = false;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] === searchValue) {
+    array[i] = newValue;
+    found = true;
+    break;
+  }
+}
+if (found) {
+  console.log("Значение найдено и изменено в массиве.");
+  console.log("Обновленный массив:", array);
+} else {
+  console.log("Значение не найдено в массиве.");
+}
